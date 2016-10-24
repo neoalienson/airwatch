@@ -1,0 +1,84 @@
+<html>
+<style>
+@import url(PressStart2P.css);
+@import url(entypo.css);
+
+div.container {
+   position: absolute;           
+   top: 50%;                     
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+div.face {
+    position: absolute;
+    top: 165px;
+    left: 50px;
+    width: 200px;
+    height: 220px;
+    color: white;
+    font-size: 12px;
+    font-family: 'Press Start 2P', cursive;
+}
+p.vcenter {
+    top: 50%;
+    position: absolute;
+    transform: translate(0, -50%);
+}
+div.twotwo {
+ position: absolute;
+ width: 100px;
+ height: 110px;
+}
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+</style>
+<script>
+</script>
+
+<body>    
+<div class=container>
+    <div>
+    <img src=apple-watch-42.png>
+        <div class="face" >
+          <p class="vcenter" style="display: none" >Welcome to Airberlin</p>
+
+          <!-- map -->
+          <div style="display: none; ">
+            <div class="vcenter" >
+              <span class="entypo-flight" ></span>
+              <img src='cartier.png' style="width: 200px; height: 200px;
+              opacity: .5;" >
+            </div>
+          </div>
+          
+          <!-- flight info -->
+          <p class="vcenter" >
+            Neo<br />
+            Alienson<br />
+            <span class="entypo-flight" ></span> AB8580<br />
+            Gate: 20<br />
+            Boarding: 06:10
+          </p>
+
+          <!-- main -->
+          <div style="display: none ">
+          <div class="twotwo" style="top:0px; left:0px;">
+           <p class="vcenter">AB8580<br><span class="entypo-flight" ></span> 06:40</p>
+          </div>
+          <div class="twotwo" style="top:0px; left:100px;">
+           <p class="vcenter">Shopping</p>
+          </div>
+          <div class="twotwo" style="top:110px; left:0px;">
+           <p class="vcenter">Game</p>
+          </div>
+          <div class="twotwo" style="top:110px; left:100px;">
+           <p class="vcenter">Gate 24<br/>@06:10</p>
+          </div>
+          </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
