@@ -1,6 +1,8 @@
 <html>
-<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 <style>
+@import url(PressStart2P.css);
+@import url(entypo.css);
+
 div.container {
    position: absolute;           
    top: 50%;                     
@@ -9,12 +11,12 @@ div.container {
 }
 div.face {
     position: absolute;
-    top: 130px;
+    top: 165px;
     left: 50px;
     width: 200px;
     height: 220px;
     color: white;
-    font-size: 16px;
+    font-size: 12px;
     font-family: 'Press Start 2P', cursive;
 }
 p.vcenter {
@@ -22,6 +24,15 @@ p.vcenter {
     position: absolute;
     transform: translate(0, -50%);
 }
+div.twotwo {
+ position: absolute;
+ width: 100px;
+ height: 110px;
+}
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
 </style>
 <script>
 </script>
@@ -31,7 +42,41 @@ p.vcenter {
     <div>
     <img src=apple-watch-42.png>
         <div class="face" >
-            <p class="vcenter" >Welcome to watch</p>
+          <p class="vcenter" style="display: none" >Welcome to Airberlin</p>
+
+          <!-- map -->
+          <div style="display: none; ">
+            <div class="vcenter" >
+              <span class="entypo-flight" ></span>
+              <img src='cartier.png' style="width: 200px; height: 200px;
+              opacity: .5;" >
+            </div>
+          </div>
+          
+          <!-- flight info -->
+          <p class="vcenter" >
+            Neo<br />
+            Alienson<br />
+            <span class="entypo-flight" ></span> AB8580<br />
+            Gate: 20<br />
+            Boarding: 06:10
+          </p>
+
+          <!-- main -->
+          <div style="display: none ">
+          <div class="twotwo" style="top:0px; left:0px;">
+           <p class="vcenter">AB8580<br><span class="entypo-flight" ></span> 06:40</p>
+          </div>
+          <div class="twotwo" style="top:0px; left:100px;">
+           <p class="vcenter">Shopping</p>
+          </div>
+          <div class="twotwo" style="top:110px; left:0px;">
+           <p class="vcenter">Game</p>
+          </div>
+          <div class="twotwo" style="top:110px; left:100px;">
+           <p class="vcenter">Gate 24<br/>@06:10</p>
+          </div>
+          </div>
         </div>
     </div>
 </div>
